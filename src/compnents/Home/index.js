@@ -1,9 +1,17 @@
 import React from "react";
+import TodoList from "./TodoList";
+import { Navbar, Container } from "react-bootstrap";
 
 function index() {
   return (
-    <div className='container text-center'>
-      <h1>Welcome The Dashboad!</h1>
+    <div className="text-center">
+      <Navbar bg="dark" variant="dark" style={{ marginBottom: "50px" }}>
+        <Container>
+          {" "}
+          <Navbar.Brand href="#home">ToDo List</Navbar.Brand>
+        </Container>
+      </Navbar>
+      <TodoList />
     </div>
   );
 }
